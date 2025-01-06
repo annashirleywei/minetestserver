@@ -28,7 +28,7 @@ RUN mkdir -p /usr/src &&\
     rm -rf /usr/src/minetest/.git
 RUN git clone --depth=1 https://git.minetest.land/VoxeLibre/VoxeLibre \
         /usr/src/minetest/games/mineclone2 &&\
-    git -C /usr/src/minetest/games/mineclone2 checkout ${MINETEST_GAME_VERSION}
+    git -C /usr/src/minetest/games/mineclone2 checkout master
 RUN git clone \
         https://github.com/LuaJIT/LuaJIT \
         /usr/src/luajit &&\
