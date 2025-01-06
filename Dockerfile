@@ -26,9 +26,9 @@ RUN mkdir -p /usr/src &&\
         https://github.com/minetest/minetest \
         /usr/src/minetest &&\
     rm -rf /usr/src/minetest/.git
-RUN git clone --depth=1 https://github.com/minetest/minetest_game \
-        /usr/src/minetest/games/minetest_game &&\
-    git -C /usr/src/minetest/games/minetest_game checkout ${MINETEST_GAME_VERSION}
+RUN git clone --depth=1 https://git.minetest.land/VoxeLibre/VoxeLibre \
+        /usr/src/minetest/games/mineclone2 &&\
+    git -C /usr/src/minetest/games/mineclone2 checkout ${MINETEST_GAME_VERSION}
 RUN git clone \
         https://github.com/LuaJIT/LuaJIT \
         /usr/src/luajit &&\
@@ -98,4 +98,4 @@ RUN ln -s /usr/share/luanti /usr/share/minetest &&\
 WORKDIR /var/lib/luanti
 USER luanti 
 EXPOSE 30000/udp 30000/tcp
-CMD ["/usr/bin/luanti-wrapper.sh", "--config", "/etc/luanti/luanti.conf", "--gameid", "minetest"]
+CMD ["/usr/bin/luanti-wrapper.sh", "--config", "/etc/luanti/luanti.conf", "--gameid", "mineclone2"]
