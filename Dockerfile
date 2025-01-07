@@ -37,7 +37,7 @@ RUN git clone --depth=1 https://github.com/asuna-mt/animalia \
 git -C /usr/src/minetest/games/asuna/mods/animalia checkout 68fabf9
 RUN git clone --depth=1 https://github.com/asuna-mt/asuna_game_mods \
      /usr/src/minetest/games/asuna/mods/asuna &&\
-git -C /usr/src/minetest/games/asuna/mods/asuna checkout 9a10ae8
+git -C /usr/src/minetest/games/asuna/mods/asuna checkout asuna
 RUN git clone --depth=1 https://github.com/asuna-mt/awards \
      /usr/src/minetest/games/asuna/mods/awards &&\
 git -C /usr/src/minetest/games/asuna/mods/awards checkout beef494
