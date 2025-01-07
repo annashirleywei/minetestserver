@@ -49,7 +49,7 @@ RUN git clone --depth=1 https://github.com/asuna-mt/beautiflowers \
 git -C /usr/src/minetest/games/asuna/mods/beautiflowers checkout b2cd386
 RUN git clone --depth=1 https://github.com/asuna-mt/biomes \
      /usr/src/minetest/games/asuna/mods/biomes &&\
-git -C /usr/src/minetest/games/asuna/mod/biomes checkout f1a18bf
+git -C /usr/src/minetest/games/asuna/mods/biomes checkout f1a18bf
 RUN git clone --depth=1 https://github.com/asuna-mt/bonemeal \
      /usr/src/minetest/games/asuna/mods/bonemeal &&\
 git -C /usr/src/minetest/games/asuna/mods/bonemeal checkout a5cd82d
