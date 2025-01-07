@@ -60,8 +60,8 @@ RUN git clone --depth=1 https://github.com/asuna-mt/builtin_item \
      /usr/src/minetest/games/asuna/mods/builtin_item &&\
 git -C /usr/src/minetest/games/asuna/mods/builtin_item checkout asuna
 RUN git clone --depth=1 https://github.com/asuna-mt/caverealms_lite \
-     /usr/src/minetest/games/asuna/mods/caverealms_lite &&\
-git -C /usr/src/minetest/games/asuna/mods/caverealms_lite checkout asuna
+     /usr/src/minetest/games/asuna/mods/caverealms &&\
+git -C /usr/src/minetest/games/asuna/mods/caverealms checkout asuna
 RUN git clone --depth=1 https://github.com/asuna-mt/colorful_beds \
      /usr/src/minetest/games/asuna/mods/colorful_beds &&\
 git -C /usr/src/minetest/games/asuna/mods/colorful_beds checkout asuna
@@ -120,11 +120,11 @@ RUN git clone --depth=1 https://github.com/asuna-mt/player_monoids \
      /usr/src/minetest/games/asuna/mods/player_monoids &&\
 git -C /usr/src/minetest/games/asuna/mods/player_monoids checkout asuna
 RUN git clone --depth=1 https://github.com/asuna-mt/minetest_sfinv_buttons \
-     /usr/src/minetest/games/asuna/mods/minetest_sfinv_buttons &&\
-git -C /usr/src/minetest/games/asuna/mods/minetest_sfinv_buttons checkout asuna
+     /usr/src/minetest/games/asuna/mods/sfinv_buttons &&\
+git -C /usr/src/minetest/games/asuna/mods/sfinv_buttons checkout asuna
 RUN git clone --depth=1 https://github.com/asuna-mt/minetest_show_wielded_item \
-     /usr/src/minetest/games/asuna/mods/minetest_show_wielded_item &&\
-git -C /usr/src/minetest/games/asuna/mods/minetest_show_wielded_item checkout asuna
+     /usr/src/minetest/games/asuna/mods/show_wielded_item &&\
+git -C /usr/src/minetest/games/asuna/mods/show_wielded_item checkout asuna
 RUN git clone --depth=1 https://github.com/asuna-mt/signs_lib \
      /usr/src/minetest/games/asuna/mods/signs_lib &&\
 git -C /usr/src/minetest/games/asuna/mods/signs_lib checkout asuna
@@ -132,8 +132,8 @@ RUN git clone --depth=1 https://github.com/asuna-mt/skinsdb \
      /usr/src/minetest/games/asuna/mods/skinsdb &&\
 git -C /usr/src/minetest/games/asuna/mods/skinsdb checkout asuna
 RUN git clone --depth=1 https://github.com/asuna-mt/minetest-soup \
-     /usr/src/minetest/games/asuna/mods/minetest-soup &&\
-git -C /usr/src/minetest/games/asuna/mods/minetest-soup checkout asuna
+     /usr/src/minetest/games/asuna/mods/soup &&\
+git -C /usr/src/minetest/games/asuna/mods/soup checkout asuna
 RUN git clone --depth=1 https://github.com/asuna-mt/stamina \
      /usr/src/minetest/games/asuna/mods/stamina &&\
 git -C /usr/src/minetest/games/asuna/mods/stamina checkout asuna
@@ -145,10 +145,10 @@ RUN git clone --depth=1 https://github.com/asuna-mt/too_many_stones \
 git -C /usr/src/minetest/games/asuna/mods/too_many_stones checkout asuna
 RUN git clone --depth=1 https://github.com/asuna-mt/minetest_tt \
      /usr/src/minetest/games/asuna/mods/minetest_tt &&\
-git -C /usr/src/minetest/games/asuna/mods/minetest_tt checkout asuna
+git -C /usr/src/minetest/games/asuna/mods/tt checkout asuna
 RUN git clone --depth=1 https://github.com/asuna-mt/minetest_tt_base \
-     /usr/src/minetest/games/asuna/mods/minetest_tt_base &&\
-git -C /usr/src/minetest/games/asuna/mods/minetest_tt_base checkout asuna
+     /usr/src/minetest/games/asuna/mods/tt_base &&\
+git -C /usr/src/minetest/games/asuna/mods/tt_base checkout asuna
 RUN git clone --depth=1 https://github.com/asuna-mt/wielded_light \
      /usr/src/minetest/games/asuna/mods/wielded_light &&\
 git -C /usr/src/minetest/games/asuna/mods/wielded_light checkout asuna
