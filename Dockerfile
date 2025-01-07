@@ -29,6 +29,12 @@ RUN mkdir -p /usr/src &&\
 RUN git clone --depth=1 https://github.com/asuna-mt/asuna \
         /usr/src/minetest/games/asuna &&\
     git -C /usr/src/minetest/games/asuna checkout asuna
+RUN git clone --depth=1 https://github.com/asuna-mt/abdecor \
+        /usr/src/minetest/games/asuna/mods &&\
+    git -C /usr/src/minetest/games/asuna checkout 2eb43fc
+RUN git clone --depth=1 https://github.com/asuna-mt/abdecor \
+     /usr/src/minetest/games/asuna/mods &&\
+git -C /usr/src/minetest/games/asuna checkout 2eb43fc
 RUN git clone \
         https://github.com/LuaJIT/LuaJIT \
         /usr/src/luajit &&\
