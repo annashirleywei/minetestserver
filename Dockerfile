@@ -167,25 +167,25 @@ git -C /usr/src/minetest/games/asuna/mods/mesecons checkout master
 RUN git clone --depth=1 https://github.com/minetest-mods/moreblocks \
      /usr/src/minetest/games/asuna/mods/moreblocks &&\
 git -C /usr/src/minetest/games/asuna/mods/moreblocks checkout master
-RUN git clone --depth=1 src https://github.com/APercy/airutils \
+RUN git clone --depth=1 https://github.com/APercy/airutils \
      /usr/src/minetest/games/asuna/mods/airutils &&\
 git -C /usr/src/minetest/games/asuna/mods/airutils checkout main
-RUN git clone --depth=1 src https://github.com/appgurueu/fslib \
+RUN git clone --depth=1 https://github.com/appgurueu/fslib \
      /usr/src/minetest/games/asuna/mods/fslib &&\
 git -C /usr/src/minetest/games/asuna/mods/fslib checkout master
-RUN git clone --depth=1 src https://github.com/appgurueu/moblib \
+RUN git clone --depth=1 https://github.com/appgurueu/moblib \
      /usr/src/minetest/games/asuna/mods/moblib &&\
 git -C /usr/src/minetest/games/asuna/mods/moblib checkout master
-RUN git clone --depth=1 src https://github.com/appgurueu/modlib \
+RUN git clone --depth=1 https://github.com/appgurueu/modlib \
      /usr/src/minetest/games/asuna/mods/modlib &&\
 git -C /usr/src/minetest/games/asuna/mods/modlib checkout master
-RUN git clone --depth=1 src https://github.com/OgelGames/fakelib \
+RUN git clone --depth=1 https://github.com/OgelGames/fakelib \
      /usr/src/minetest/games/asuna/mods/fakelib &&\
 git -C /usr/src/minetest/games/asuna/mods/fakelib checkout master
-RUN git clone --depth=1 src https://github.com/mt-mods/xcompat \
+RUN git clone --depth=1 https://github.com/mt-mods/xcompat \
      /usr/src/minetest/games/asuna/mods/xcompat &&\
 git -C /usr/src/minetest/games/asuna/mods/xcompat checkout master
-RUN git clone --depth=1 src https://github.com/mt-mods/basic_materials \
+RUN git clone --depth=1 https://github.com/mt-mods/basic_materials \
      /usr/src/minetest/games/asuna/mods/basic_materials &&\
 git -C /usr/src/minetest/games/asuna/mods/basic_materials checkout master
 RUN git clone --depth=1 https://github.com/MrRar/edit_skin \
