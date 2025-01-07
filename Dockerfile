@@ -98,4 +98,4 @@ RUN ln -s /usr/share/luanti /usr/share/minetest &&\
 WORKDIR /var/lib/luanti
 USER luanti 
 EXPOSE 30000/udp 30000/tcp
-CMD ["/usr/bin/luanti-wrapper.sh", "--config", "/etc/luanti/luanti.conf", "--gameid", "mineclone2"]
+CMD ["/usr/bin/luanti-wrapper.sh", "--config", "/etc/luanti/luanti.conf", "--gameid", "asuna"]
