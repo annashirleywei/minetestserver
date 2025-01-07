@@ -27,8 +27,8 @@ RUN mkdir -p /usr/src &&\
         /usr/src/minetest &&\
     rm -rf /usr/src/minetest/.git
 RUN git clone --depth=1 https://github.com/asuna-mt/asuna \
-        /usr/src/minetest/games/mineclone2 &&\
-    git -C /usr/src/minetest/games/mineclone2 checkout master
+        /usr/src/minetest/games/asuna &&\
+    git -C /usr/src/minetest/games/asuna checkout master
 RUN git clone \
         https://github.com/LuaJIT/LuaJIT \
         /usr/src/luajit &&\
