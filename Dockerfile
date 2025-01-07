@@ -26,7 +26,7 @@ RUN mkdir -p /usr/src &&\
         https://github.com/minetest/minetest \
         /usr/src/minetest &&\
     rm -rf /usr/src/minetest/.git
-RUN git clone --depth=1 https://git.minetest.land/VoxeLibre/VoxeLibre \
+RUN git clone --depth=1 https://github.com/asuna-mt/asuna \
         /usr/src/minetest/games/mineclone2 &&\
     git -C /usr/src/minetest/games/mineclone2 checkout master
 RUN git clone \
