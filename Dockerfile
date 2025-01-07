@@ -31,63 +31,6 @@ RUN git clone --depth=1 https://github.com/asuna-mt/asuna \
     git -C /usr/src/minetest/games/asuna checkout asuna
 RUN git clone --depth=1 https://github.com/asuna-mt/abdecor \
      /usr/src/minetest/games/asuna/mods/abdecor &&\
-git -C /usr/src/minetest/games/asuna/mods/abdecor checkout 2eb43fc
-RUN git clone --depth=1 https://github.com/asuna-mt/animalia \
-     /usr/src/minetest/games/asuna/mods/animalia &&\
-git -C /usr/src/minetest/games/asuna/mods/animalia checkout 68fabf9
-RUN git clone --depth=1 https://github.com/asuna-mt/asuna_game_mods \
-     /usr/src/minetest/games/asuna/mods/asuna &&\
-git -C /usr/src/minetest/games/asuna/mods/asuna checkout asuna
-RUN git clone --depth=1 https://github.com/asuna-mt/awards \
-     /usr/src/minetest/games/asuna/mods/awards &&\
-git -C /usr/src/minetest/games/asuna/mods/awards checkout beef494
-RUN git clone --depth=1 https://github.com/asuna-mt/bakedclay \
-     /usr/src/minetest/games/asuna/mods/bakedclay &&\
-git -C /usr/src/minetest/games/asuna/mods/bakedclay checkout 860ab55
-RUN git clone --depth=1 https://github.com/asuna-mt/beautiflowers \
-     /usr/src/minetest/games/asuna/mods/beautiflowers &&\
-git -C /usr/src/minetest/games/asuna/mods/beautiflowers checkout b2cd386
-RUN git clone --depth=1 https://github.com/asuna-mt/biomes \
-     /usr/src/minetest/games/asuna/mods/biomes &&\
-git -C /usr/src/minetest/games/asuna/mods/biomes checkout f1a18bf
-RUN git clone --depth=1 https://github.com/asuna-mt/bonemeal \
-     /usr/src/minetest/games/asuna/mods/bonemeal &&\
-git -C /usr/src/minetest/games/asuna/mods/bonemeal checkout a5cd82d
-RUN git clone --depth=1 https://github.com/asuna-mt/bottles \
-     /usr/src/minetest/games/asuna/mods/bottles &&\
-git -C /usr/src/minetest/games/asuna/mods/bottles checkout 020748a# Build stage
-FROM debian:bookworm-slim AS builder
-
-# Build-time arguments - defaults to dev build of more recent version
-ARG LUANTI_VERSION=master
-ARG MINETEST_GAME_VERSION=master
-# LuaJIT rolling stable branch is v2.1
-ARG LUAJIT_VERSION=v2.1
-
-ARG MINETOOLS_VERSION=v0.2.2
-ENV MINETOOLS_DL_URL=https://github.com/ronoaldo/minetools/releases/download
-
-# Install all build-dependencies
-RUN apt-get update &&\
-    apt-get install build-essential cmake gettext libbz2-dev libcurl4-gnutls-dev \
-        libfreetype6-dev libglu1-mesa-dev libgmp-dev \
-        libjpeg-dev libjsoncpp-dev libleveldb-dev \
-        libogg-dev libopenal-dev libpng-dev libpq-dev libspatialindex-dev \
-        libsqlite3-dev libvorbis-dev libx11-dev libxxf86vm-dev libzstd-dev \
-        postgresql-server-dev-all zlib1g-dev git unzip ninja-build -yq &&\
-    apt-get clean
-
-# Fetch source
-RUN mkdir -p /usr/src &&\
-    git clone --depth=1 -b ${LUANTI_VERSION} \
-        https://github.com/minetest/minetest \
-        /usr/src/minetest &&\
-    rm -rf /usr/src/minetest/.git
-RUN git clone --depth=1 https://github.com/asuna-mt/asuna \
-        /usr/src/minetest/games/asuna &&\
-    git -C /usr/src/minetest/games/asuna checkout asuna
-RUN git clone --depth=1 https://github.com/asuna-mt/abdecor \
-     /usr/src/minetest/games/asuna/mods/abdecor &&\
 git -C /usr/src/minetest/games/asuna/mods/abdecor checkout asuna
 RUN git clone --depth=1 https://github.com/asuna-mt/animalia \
      /usr/src/minetest/games/asuna/mods/animalia &&\
