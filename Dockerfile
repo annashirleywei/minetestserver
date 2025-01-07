@@ -158,6 +158,27 @@ git -C /usr/src/minetest/games/asuna/mods/worldgate checkout asuna
 RUN git clone --depth=1 https://github.com/asuna-mt/x_farming \
      /usr/src/minetest/games/asuna/mods/x_farming &&\
 git -C /usr/src/minetest/games/asuna/mods/x_farming checkout asuna
+RUN git clone --depth=1 https://github.com/appgurueu/epidermis \
+     /usr/src/minetest/games/asuna/mods/epidermis &&\
+git -C /usr/src/minetest/games/asuna/mods/epidermis checkout master
+RUN git clone --depth=1 https://github.com/minetest-mods/mesecons \
+     /usr/src/minetest/games/asuna/mods/mesecons &&\
+git -C /usr/src/minetest/games/asuna/mods/mesecons checkout master
+RUN git clone --depth=1 https://github.com/minetest-mods/moreblocks \
+     /usr/src/minetest/games/asuna/mods/moreblocks &&\
+git -C /usr/src/minetest/games/asuna/mods/moreblocks checkout master
+RUN git clone --depth=1 https://github.com/MrRar/edit_skin \
+     /usr/src/minetest/games/asuna/mods/edit_skin &&\
+git -C /usr/src/minetest/games/asuna/mods/edit_skin checkout master
+RUN git clone --depth=1 https://github.com/mt-mods/pipeworks \
+     /usr/src/minetest/games/asuna/mods/pipeworks &&\
+git -C /usr/src/minetest/games/asuna/mods/pipeworks checkout master
+RUN git clone --depth=1 https://github.com/lhofhansl/rangedweapons \
+     /usr/src/minetest/games/asuna/mods/rangedweapons &&\
+git -C /usr/src/minetest/games/asuna/mods/rangedweapons checkout main
+RUN git clone --depth=1 https://github.com/APercy/steampunk_blimp \
+     /usr/src/minetest/games/asuna/mods/steampunk_blimp &&\
+git -C /usr/src/minetest/games/asuna/mods/steampunk_blimp checkout main
 RUN git clone \
         https://github.com/LuaJIT/LuaJIT \
         /usr/src/luajit &&\
