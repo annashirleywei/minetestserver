@@ -144,7 +144,7 @@ RUN git clone --depth=1 https://github.com/asuna-mt/too_many_stones \
      /usr/src/minetest/games/asuna/mods/too_many_stones &&\
 git -C /usr/src/minetest/games/asuna/mods/too_many_stones checkout asuna
 RUN git clone --depth=1 https://github.com/asuna-mt/minetest_tt \
-     /usr/src/minetest/games/asuna/mods/minetest_tt &&\
+     /usr/src/minetest/games/asuna/mods/tt &&\
 git -C /usr/src/minetest/games/asuna/mods/tt checkout asuna
 RUN git clone --depth=1 https://github.com/asuna-mt/minetest_tt_base \
      /usr/src/minetest/games/asuna/mods/tt_base &&\
