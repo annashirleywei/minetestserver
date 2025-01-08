@@ -26,180 +26,334 @@ RUN mkdir -p /usr/src &&\
         https://github.com/minetest/minetest \
         /usr/src/minetest &&\
     rm -rf /usr/src/minetest/.git
+    
 RUN git clone --depth=1 https://github.com/asuna-mt/asuna \
         /usr/src/minetest/games/asuna &&\
     git -C /usr/src/minetest/games/asuna checkout asuna
+    
 RUN git clone --depth=1 https://github.com/asuna-mt/abdecor \
      /usr/src/minetest/games/asuna/mods/abdecor &&\
 git -C /usr/src/minetest/games/asuna/mods/abdecor checkout asuna
+
 RUN git clone --depth=1 https://github.com/asuna-mt/animalia \
      /usr/src/minetest/games/asuna/mods/animalia &&\
 git -C /usr/src/minetest/games/asuna/mods/animalia checkout asuna
+
 RUN git clone --depth=1 https://github.com/asuna-mt/asuna_game_mods \
      /usr/src/minetest/games/asuna/mods/asuna &&\
 git -C /usr/src/minetest/games/asuna/mods/asuna checkout asuna
+
 RUN git clone --depth=1 https://github.com/asuna-mt/awards \
      /usr/src/minetest/games/asuna/mods/awards &&\
 git -C /usr/src/minetest/games/asuna/mods/awards checkout asuna
+
 RUN git clone --depth=1 https://github.com/asuna-mt/bakedclay \
      /usr/src/minetest/games/asuna/mods/bakedclay &&\
 git -C /usr/src/minetest/games/asuna/mods/bakedclay checkout asuna
+
 RUN git clone --depth=1 https://github.com/asuna-mt/beautiflowers \
      /usr/src/minetest/games/asuna/mods/beautiflowers &&\
 git -C /usr/src/minetest/games/asuna/mods/beautiflowers checkout asuna
+
 RUN git clone --depth=1 https://github.com/asuna-mt/biomes \
      /usr/src/minetest/games/asuna/mods/biomes &&\
 git -C /usr/src/minetest/games/asuna/mods/biomes checkout asuna
+
 RUN git clone --depth=1 https://github.com/asuna-mt/bonemeal \
      /usr/src/minetest/games/asuna/mods/bonemeal &&\
 git -C /usr/src/minetest/games/asuna/mods/bonemeal checkout asuna
+
 RUN git clone --depth=1 https://github.com/asuna-mt/bottles \
      /usr/src/minetest/games/asuna/mods/bottles &&\
 git -C /usr/src/minetest/games/asuna/mods/bottles checkout asuna
+
 RUN git clone --depth=1 https://github.com/asuna-mt/builtin_item \
      /usr/src/minetest/games/asuna/mods/builtin_item &&\
 git -C /usr/src/minetest/games/asuna/mods/builtin_item checkout asuna
+
 RUN git clone --depth=1 https://github.com/asuna-mt/caverealms_lite \
      /usr/src/minetest/games/asuna/mods/caverealms &&\
 git -C /usr/src/minetest/games/asuna/mods/caverealms checkout asuna
+
 RUN git clone --depth=1 https://github.com/asuna-mt/colorful_beds \
      /usr/src/minetest/games/asuna/mods/colorful_beds &&\
 git -C /usr/src/minetest/games/asuna/mods/colorful_beds checkout asuna
+
 RUN git clone --depth=1 https://github.com/asuna-mt/creatura \
      /usr/src/minetest/games/asuna/mods/creatura &&\
 git -C /usr/src/minetest/games/asuna/mods/creatura checkout asuna
+
 RUN git clone --depth=1 https://github.com/asuna-mt/ethereal \
      /usr/src/minetest/games/asuna/mods/ethereal &&\
 git -C /usr/src/minetest/games/asuna/mods/ethereal checkout asuna
+
 RUN git clone --depth=1 https://github.com/asuna-mt/everness \
      /usr/src/minetest/games/asuna/mods/everness &&\
 git -C /usr/src/minetest/games/asuna/mods/everness checkout asuna
+
 RUN git clone --depth=1 https://github.com/asuna-mt/farming \
      /usr/src/minetest/games/asuna/mods/farming &&\
 git -C /usr/src/minetest/games/asuna/mods/farming checkout asuna
+
 RUN git clone --depth=1 https://github.com/asuna-mt/flowerpot \
      /usr/src/minetest/games/asuna/mods/flowerpot &&\
 git -C /usr/src/minetest/games/asuna/mods/flowerpot checkout asuna
+
 RUN git clone --depth=1 https://github.com/asuna-mt/geodes \
      /usr/src/minetest/games/asuna/mods/geodes &&\
 git -C /usr/src/minetest/games/asuna/mods/geodes checkout asuna
+
 RUN git clone --depth=1 https://github.com/asuna-mt/herbs \
      /usr/src/minetest/games/asuna/mods/herbs &&\
 git -C /usr/src/minetest/games/asuna/mods/herbs checkout asuna
+
 RUN git clone --depth=1 https://github.com/asuna-mt/item_drop \
      /usr/src/minetest/games/asuna/mods/item_drop &&\
 git -C /usr/src/minetest/games/asuna/mods/item_drop checkout asuna
+
 RUN git clone --depth=1 https://github.com/asuna-mt/leafstride \
      /usr/src/minetest/games/asuna/mods/leafstride &&\
 git -C /usr/src/minetest/games/asuna/mods/leafstride checkout asuna
+
 RUN git clone --depth=1 https://github.com/asuna-mt/livingjungle \
      /usr/src/minetest/games/asuna/mods/livingjungle &&\
 git -C /usr/src/minetest/games/asuna/mods/livingjungle checkout asuna
+
 RUN git clone --depth=1 https://github.com/asuna-mt/livingslimes \
      /usr/src/minetest/games/asuna/mods/livingslimes &&\
 git -C /usr/src/minetest/games/asuna/mods/livingslimes checkout asuna
+
 RUN git clone --depth=1 https://github.com/asuna-mt/lootchests_modpack \
      /usr/src/minetest/games/asuna/mods/lootchests_modpack &&\
 git -C /usr/src/minetest/games/asuna/mods/lootchests_modpack checkout asuna
+
 RUN git clone --depth=1 https://github.com/asuna-mt/marinara \
      /usr/src/minetest/games/asuna/mods/marinara &&\
 git -C /usr/src/minetest/games/asuna/mods/marinara checkout asuna
+
 RUN git clone --depth=1 https://github.com/asuna-mt/minetest_game \
      /usr/src/minetest/games/asuna/mods/minetest_game &&\
 git -C /usr/src/minetest/games/asuna/mods/minetest_game checkout asuna
+
 RUN git clone --depth=1 https://github.com/asuna-mt/music_modpack \
      /usr/src/minetest/games/asuna/mods/music_modpack &&\
 git -C /usr/src/minetest/games/asuna/mods/music_modpack checkout asuna
+
 RUN git clone --depth=1 https://github.com/asuna-mt/naturalbiomes \
      /usr/src/minetest/games/asuna/mods/naturalbiomes &&\
 git -C /usr/src/minetest/games/asuna/mods/naturalbiomes checkout asuna
+
 RUN git clone --depth=1 https://github.com/asuna-mt/plantlife_modpack \
      /usr/src/minetest/games/asuna/mods/plantlife_modpack &&\
 git -C /usr/src/minetest/games/asuna/mods/plantlife_modpack checkout asuna
+
 RUN git clone --depth=1 https://github.com/asuna-mt/player_monoids \
      /usr/src/minetest/games/asuna/mods/player_monoids &&\
 git -C /usr/src/minetest/games/asuna/mods/player_monoids checkout asuna
+
 RUN git clone --depth=1 https://github.com/asuna-mt/minetest_sfinv_buttons \
      /usr/src/minetest/games/asuna/mods/sfinv_buttons &&\
 git -C /usr/src/minetest/games/asuna/mods/sfinv_buttons checkout asuna
+
 RUN git clone --depth=1 https://github.com/asuna-mt/minetest_show_wielded_item \
      /usr/src/minetest/games/asuna/mods/show_wielded_item &&\
 git -C /usr/src/minetest/games/asuna/mods/show_wielded_item checkout asuna
+
 RUN git clone --depth=1 https://github.com/asuna-mt/signs_lib \
      /usr/src/minetest/games/asuna/mods/signs_lib &&\
 git -C /usr/src/minetest/games/asuna/mods/signs_lib checkout asuna
+
 RUN git clone --depth=1 https://github.com/asuna-mt/skinsdb \
      /usr/src/minetest/games/asuna/mods/skinsdb &&\
 git -C /usr/src/minetest/games/asuna/mods/skinsdb checkout asuna
+
 RUN git clone --depth=1 https://github.com/asuna-mt/minetest-soup \
      /usr/src/minetest/games/asuna/mods/soup &&\
 git -C /usr/src/minetest/games/asuna/mods/soup checkout asuna
+
 RUN git clone --depth=1 https://github.com/asuna-mt/stamina \
      /usr/src/minetest/games/asuna/mods/stamina &&\
 git -C /usr/src/minetest/games/asuna/mods/stamina checkout asuna
+
 RUN git clone --depth=1 https://github.com/asuna-mt/telemosaic \
      /usr/src/minetest/games/asuna/mods/telemosaic &&\
 git -C /usr/src/minetest/games/asuna/mods/telemosaic checkout asuna
+
 RUN git clone --depth=1 https://github.com/asuna-mt/too_many_stones \
      /usr/src/minetest/games/asuna/mods/too_many_stones &&\
 git -C /usr/src/minetest/games/asuna/mods/too_many_stones checkout asuna
+
 RUN git clone --depth=1 https://github.com/asuna-mt/minetest_tt \
      /usr/src/minetest/games/asuna/mods/tt &&\
 git -C /usr/src/minetest/games/asuna/mods/tt checkout asuna
+
 RUN git clone --depth=1 https://github.com/asuna-mt/minetest_tt_base \
      /usr/src/minetest/games/asuna/mods/tt_base &&\
 git -C /usr/src/minetest/games/asuna/mods/tt_base checkout asuna
+
 RUN git clone --depth=1 https://github.com/asuna-mt/wielded_light \
      /usr/src/minetest/games/asuna/mods/wielded_light &&\
 git -C /usr/src/minetest/games/asuna/mods/wielded_light checkout asuna
+
 RUN git clone --depth=1 https://github.com/asuna-mt/worldgate \
      /usr/src/minetest/games/asuna/mods/worldgate &&\
 git -C /usr/src/minetest/games/asuna/mods/worldgate checkout asuna
+
 RUN git clone --depth=1 https://github.com/asuna-mt/x_farming \
      /usr/src/minetest/games/asuna/mods/x_farming &&\
 git -C /usr/src/minetest/games/asuna/mods/x_farming checkout asuna
+
+# Mods next
+
+RUN git clone --depth=1 https://codeberg.org/Wuzzy/xdecor-libre \
+     /usr/src/minetest/games/asuna/mods/xdecor-libre &&\
+git -C /usr/src/minetest/games/asuna/mods/xdecor-libre checkout master
+
+RUN git clone --depth=1 https://codeberg.org/Wuzzy/xdecor-libre \
+     /usr/src/minetest/games/asuna/mods/xdecor-libre &&\
+git -C /usr/src/minetest/games/asuna/mods/xdecor-libre checkout master
+
+RUN git clone --depth=1 https://github.com/mt-mods/hangglider \
+     /usr/src/minetest/games/asuna/mods/hangglider &&\
+git -C /usr/src/minetest/games/asuna/mods/hangglider checkout master
+
+RUN git clone --depth=1 https://github.com/minetest-mods/unified_inventory \
+     /usr/src/minetest/games/asuna/mods/unified_inventory &&\
+git -C /usr/src/minetest/games/asuna/mods/unified_inventory checkout master
+
+RUN git clone --depth=1 https://github.com/minetest-mods/3d_armor \
+     /usr/src/minetest/games/asuna/mods/3d_armor &&\
+git -C /usr/src/minetest/games/asuna/mods/3d_armor checkout master
+
 RUN git clone --depth=1 https://github.com/appgurueu/epidermis \
      /usr/src/minetest/games/asuna/mods/epidermis &&\
 git -C /usr/src/minetest/games/asuna/mods/epidermis checkout master
+     
 RUN git clone --depth=1 https://github.com/minetest-mods/mesecons \
      /usr/src/minetest/games/asuna/mods/mesecons &&\
 git -C /usr/src/minetest/games/asuna/mods/mesecons checkout master
+
 RUN git clone --depth=1 https://github.com/minetest-mods/moreblocks \
      /usr/src/minetest/games/asuna/mods/moreblocks &&\
 git -C /usr/src/minetest/games/asuna/mods/moreblocks checkout master
-RUN git clone --depth=1 src https://github.com/APercy/airutils \
+
+RUN git clone --depth=1 https://github.com/APercy/airutils \
      /usr/src/minetest/games/asuna/mods/airutils &&\
 git -C /usr/src/minetest/games/asuna/mods/airutils checkout main
-RUN git clone --depth=1 src https://github.com/appgurueu/fslib \
+
+RUN git clone --depth=1 https://github.com/appgurueu/fslib \
      /usr/src/minetest/games/asuna/mods/fslib &&\
 git -C /usr/src/minetest/games/asuna/mods/fslib checkout master
-RUN git clone --depth=1 src https://github.com/appgurueu/moblib \
+
+RUN git clone --depth=1 https://github.com/appgurueu/moblib \
      /usr/src/minetest/games/asuna/mods/moblib &&\
 git -C /usr/src/minetest/games/asuna/mods/moblib checkout master
-RUN git clone --depth=1 src https://github.com/appgurueu/modlib \
+
+RUN git clone --depth=1 https://github.com/appgurueu/modlib \
      /usr/src/minetest/games/asuna/mods/modlib &&\
 git -C /usr/src/minetest/games/asuna/mods/modlib checkout master
-RUN git clone --depth=1 src https://github.com/OgelGames/fakelib \
+
+RUN git clone --depth=1 https://github.com/OgelGames/fakelib \
      /usr/src/minetest/games/asuna/mods/fakelib &&\
 git -C /usr/src/minetest/games/asuna/mods/fakelib checkout master
-RUN git clone --depth=1 src https://github.com/mt-mods/xcompat \
+
+RUN git clone --depth=1 https://github.com/mt-mods/xcompat \
      /usr/src/minetest/games/asuna/mods/xcompat &&\
 git -C /usr/src/minetest/games/asuna/mods/xcompat checkout master
-RUN git clone --depth=1 src https://github.com/mt-mods/basic_materials \
+
+RUN git clone --depth=1 https://github.com/mt-mods/basic_materials \
      /usr/src/minetest/games/asuna/mods/basic_materials &&\
 git -C /usr/src/minetest/games/asuna/mods/basic_materials checkout master
+
 RUN git clone --depth=1 https://github.com/MrRar/edit_skin \
      /usr/src/minetest/games/asuna/mods/edit_skin &&\
 git -C /usr/src/minetest/games/asuna/mods/edit_skin checkout master
+
 RUN git clone --depth=1 https://github.com/mt-mods/pipeworks \
      /usr/src/minetest/games/asuna/mods/pipeworks &&\
 git -C /usr/src/minetest/games/asuna/mods/pipeworks checkout master
+
 RUN git clone --depth=1 https://github.com/lhofhansl/rangedweapons \
      /usr/src/minetest/games/asuna/mods/rangedweapons &&\
 git -C /usr/src/minetest/games/asuna/mods/rangedweapons checkout main
+
+# APercy
+RUN git clone --depth=1 https://github.com/Lokrates/Biofuel \
+     /usr/src/minetest/games/asuna/mods/Biofuel &&\
+git -C /usr/src/minetest/games/asuna/mods/Biofuel checkout master
+
+RUN git clone --depth=1 https://github.com/APercy/automobiles_pck \
+     /usr/src/minetest/games/asuna/mods/automobiles_pckautomobiles_pck &&\
+git -C /usr/src/minetest/games/asuna/mods/automobiles_pck checkout main 
+
 RUN git clone --depth=1 https://github.com/APercy/steampunk_blimp \
      /usr/src/minetest/games/asuna/mods/steampunk_blimp &&\
 git -C /usr/src/minetest/games/asuna/mods/steampunk_blimp checkout main
+
+RUN git clone --depth=1 https://github.com/APercy/supercub \
+     /usr/src/minetest/games/asuna/mods/supercub &&\
+git -C /usr/src/minetest/games/asuna/mods/supercub checkout main
+
+RUN git clone --depth=1 https://github.com/APercy/hidroplane \
+     /usr/src/minetest/games/asuna/mods/hidroplane &&\
+git -C /usr/src/minetest/games/asuna/mods/hidroplane checkout main
+
+RUN git clone --depth=1 https://github.com/APercy/motorboat \
+     /usr/src/minetest/games/asuna/mods/motorboat &&\
+git -C /usr/src/minetest/games/asuna/mods/motorboat checkout main
+
+RUN git clone --depth=1 https://github.com/APercy/pa28 \
+     /usr/src/minetest/games/asuna/mods/pa28 &&\
+git -C /usr/src/minetest/games/asuna/mods/pa28 checkout main
+
+RUN git clone --depth=1 https://github.com/APercy/helicopter \
+     /usr/src/minetest/games/asuna/mods/helicopter &&\
+git -C /usr/src/minetest/games/asuna/mods/helicopter checkout master
+
+RUN git clone --depth=1 https://github.com/APercy/trike \
+     /usr/src/minetest/games/asuna/mods/trike &&\
+git -C /usr/src/minetest/games/asuna/mods/trike checkout master
+
+RUN git clone --depth=1 https://github.com/APercy/minekart \
+     /usr/src/minetest/games/asuna/mods/minekart &&\
+git -C /usr/src/minetest/games/asuna/mods/minekart checkout master
+
+RUN git clone --depth=1 https://github.com/APercy/ww1_planes \
+     /usr/src/minetest/games/asuna/mods/ww1_planes &&\
+git -C /usr/src/minetest/games/asuna/mods/ww1_planes checkout main
+
+RUN git clone --depth=1 https://github.com/APercy/ju52 \
+     /usr/src/minetest/games/asuna/mods/ju52 &&\
+git -C /usr/src/minetest/games/asuna/mods/ju52 checkout main
+
+RUN git clone --depth=1 https://github.com/APercy/demoiselle \
+     /usr/src/minetest/games/asuna/mods/demoiselle &&\
+git -C /usr/src/minetest/games/asuna/mods/demoiselle checkout main
+
+RUN git clone --depth=1 https://github.com/APercy/fishing_boat \
+     /usr/src/minetest/games/asuna/mods/fishing_boat &&\
+git -C /usr/src/minetest/games/asuna/mods/fishing_boat checkout main
+
+RUN git clone --depth=1 https://github.com/APercy/nautilus \
+     /usr/src/minetest/games/asuna/mods/nautilus &&\
+git -C /usr/src/minetest/games/asuna/mods/nautilus checkout master
+
+RUN git clone --depth=1 https://github.com/APercy/ap_airship \
+     /usr/src/minetest/games/asuna/mods/ap_airship &&\
+git -C /usr/src/minetest/games/asuna/mods/ap_airship checkout main
+
+RUN git clone --depth=1 https://github.com/APercy/savoia_s21 \
+     /usr/src/minetest/games/asuna/mods/savoia_s21 &&\
+git -C /usr/src/minetest/games/asuna/mods/savoia_s21 checkout main
+
+RUN git clone --depth=1 https://github.com/APercy/b47_heli \
+     /usr/src/minetest/games/asuna/mods/b47_heli &&\
+git -C /usr/src/minetest/games/asuna/mods/b47_heli checkout main
+
+RUN git clone --depth=1 https://github.com/APercy/ju52_hydro \
+     /usr/src/minetest/games/asuna/mods/ju52_hydro &&\
+git -C /usr/src/minetest/games/asuna/mods/ju52_hydro checkout main
+
 RUN git clone \
         https://github.com/LuaJIT/LuaJIT \
         /usr/src/luajit &&\
