@@ -205,149 +205,149 @@ git -C /usr/src/minetest/games/asuna/mods/x_farming checkout asuna
 
 # Mods next
 RUN git clone --depth=1 https://codeberg.org/Wuzzy/xdecor-libre \
-     /usr/src/minetest/games/asuna/mods/xdecor-libre &&\
-git -C /usr/src/minetest/games/asuna/mods/xdecor-libre checkout master
+     /usr/src/minetest/mods/xdecor-libre &&\
+git -C /usr/src/minetest/mods/xdecor-libre checkout master
 
 RUN git clone --depth=1 https://github.com/mt-mods/hangglider \
-     /usr/src/minetest/games/asuna/mods/hangglider &&\
-git -C /usr/src/minetest/games/asuna/mods/hangglider checkout master
+     /usr/src/minetest/mods/hangglider &&\
+git -C /usr/src/minetest/mods/hangglider checkout master
 
 RUN git clone --depth=1 https://github.com/minetest-mods/unified_inventory \
-     /usr/src/minetest/games/asuna/mods/unified_inventory &&\
-git -C /usr/src/minetest/games/asuna/mods/unified_inventory checkout master
+     /usr/src/minetest/mods/unified_inventory &&\
+git -C /usr/src/minetest/mods/unified_inventory checkout master
 
 RUN git clone --depth=1 https://github.com/minetest-mods/3d_armor \
-     /usr/src/minetest/games/asuna/mods/3d_armor &&\
-git -C /usr/src/minetest/games/asuna/mods/3d_armor checkout master
+     /usr/src/minetest/mods/3d_armor &&\
+git -C /usr/src/minetest/mods/3d_armor checkout master
 
 RUN git clone --depth=1 https://github.com/appgurueu/epidermis \
-     /usr/src/minetest/games/asuna/mods/epidermis &&\
-git -C /usr/src/minetest/games/asuna/mods/epidermis checkout master
+     /usr/src/minetest/mods/epidermis &&\
+git -C /usr/src/minetest/mods/epidermis checkout master
      
 RUN git clone --depth=1 https://github.com/minetest-mods/mesecons \
-     /usr/src/minetest/games/asuna/mods/mesecons &&\
-git -C /usr/src/minetest/games/asuna/mods/mesecons checkout master
+     /usr/src/minetest/mods/mesecons &&\
+git -C /usr/src/minetest/mods/mesecons checkout master
 
 RUN git clone --depth=1 https://github.com/minetest-mods/moreblocks \
-     /usr/src/minetest/games/asuna/mods/moreblocks &&\
-git -C /usr/src/minetest/games/asuna/mods/moreblocks checkout master
+     /usr/src/minetest/mods/moreblocks &&\
+git -C /usr/src/minetest/mods/moreblocks checkout master
 
 RUN git clone --depth=1 https://github.com/APercy/airutils \
-     /usr/src/minetest/games/asuna/mods/airutils &&\
-git -C /usr/src/minetest/games/asuna/mods/airutils checkout main
+     /usr/src/minetest/mods/airutils &&\
+git -C /usr/src/minetest/mods/airutils checkout main
 
 RUN git clone --depth=1 https://github.com/appgurueu/fslib \
-     /usr/src/minetest/games/asuna/mods/fslib &&\
-git -C /usr/src/minetest/games/asuna/mods/fslib checkout master
+     /usr/src/minetest/mods/fslib &&\
+git -C /usr/src/minetest/mods/fslib checkout master
 
 RUN git clone --depth=1 https://github.com/appgurueu/moblib \
-     /usr/src/minetest/games/asuna/mods/moblib &&\
-git -C /usr/src/minetest/games/asuna/mods/moblib checkout master
+     /usr/src/minetest/mods/moblib &&\
+git -C /usr/src/minetest/mods/moblib checkout master
 
 RUN git clone --depth=1 https://github.com/appgurueu/modlib \
-     /usr/src/minetest/games/asuna/mods/modlib &&\
-git -C /usr/src/minetest/games/asuna/mods/modlib checkout master
+     /usr/src/minetest/mods/modlib &&\
+git -C /usr/src/minetest/mods/modlib checkout master
 
 RUN git clone --depth=1 https://github.com/OgelGames/fakelib \
-     /usr/src/minetest/games/asuna/mods/fakelib &&\
-git -C /usr/src/minetest/games/asuna/mods/fakelib checkout master
+     /usr/src/minetest/mods/fakelib &&\
+git -C /usr/src/minetest/mods/fakelib checkout master
 
 RUN git clone --depth=1 https://github.com/mt-mods/xcompat \
-     /usr/src/minetest/games/asuna/mods/xcompat &&\
-git -C /usr/src/minetest/games/asuna/mods/xcompat checkout master
+     /usr/src/minetest/mods/xcompat &&\
+git -C /usr/src/minetest/mods/xcompat checkout master
 
 RUN git clone --depth=1 https://github.com/mt-mods/basic_materials \
-     /usr/src/minetest/games/asuna/mods/basic_materials &&\
-git -C /usr/src/minetest/games/asuna/mods/basic_materials checkout master
+     /usr/src/minetest/mods/basic_materials &&\
+git -C /usr/src/minetest/mods/basic_materials checkout master
 
 RUN git clone --depth=1 https://github.com/MrRar/edit_skin \
-     /usr/src/minetest/games/asuna/mods/edit_skin &&\
-git -C /usr/src/minetest/games/asuna/mods/edit_skin checkout master
+     /usr/src/minetest/mods/edit_skin &&\
+git -C /usr/src/minetest/mods/edit_skin checkout master
 
 RUN git clone --depth=1 https://github.com/mt-mods/pipeworks \
-     /usr/src/minetest/games/asuna/mods/pipeworks &&\
-git -C /usr/src/minetest/games/asuna/mods/pipeworks checkout master
+     /usr/src/minetest/mods/pipeworks &&\
+git -C /usr/src/minetest/mods/pipeworks checkout master
 
 RUN git clone --depth=1 https://github.com/lhofhansl/rangedweapons \
-     /usr/src/minetest/games/asuna/mods/rangedweapons &&\
-git -C /usr/src/minetest/games/asuna/mods/rangedweapons checkout main
+     /usr/src/minetest/mods/rangedweapons &&\
+git -C /usr/src/minetest/mods/rangedweapons checkout main
 
 # APercy
 RUN git clone --depth=1 https://github.com/Lokrates/Biofuel \
-     /usr/src/minetest/games/asuna/mods/Biofuel &&\
-git -C /usr/src/minetest/games/asuna/mods/Biofuel checkout master
+     /usr/src/minetest/mods/Biofuel &&\
+git -C /usr/src/minetest/mods/Biofuel checkout master
 
 RUN git clone --depth=1 https://github.com/APercy/automobiles_pck \
-     /usr/src/minetest/games/asuna/mods/automobiles_pck &&\
-git -C /usr/src/minetest/games/asuna/mods/automobiles_pck checkout main 
+     /usr/src/minetest/mods/automobiles_pck &&\
+git -C /usr/src/minetest/mods/automobiles_pck checkout main 
 
 RUN git clone --depth=1 https://github.com/APercy/steampunk_blimp \
-     /usr/src/minetest/games/asuna/mods/steampunk_blimp &&\
-git -C /usr/src/minetest/games/asuna/mods/steampunk_blimp checkout main
+     /usr/src/minetest/mods/steampunk_blimp &&\
+git -C /usr/src/minetest/mods/steampunk_blimp checkout main
 
 RUN git clone --depth=1 https://github.com/APercy/supercub \
-     /usr/src/minetest/games/asuna/mods/supercub &&\
-git -C /usr/src/minetest/games/asuna/mods/supercub checkout main
+     /usr/src/minetest/mods/supercub &&\
+git -C /usr/src/minetest/mods/supercub checkout main
 
 RUN git clone --depth=1 https://github.com/APercy/hidroplane \
-     /usr/src/minetest/games/asuna/mods/hidroplane &&\
-git -C /usr/src/minetest/games/asuna/mods/hidroplane checkout main
+     /usr/src/minetest/mods/hidroplane &&\
+git -C /usr/src/minetest/mods/hidroplane checkout main
 
 RUN git clone --depth=1 https://github.com/APercy/motorboat \
-     /usr/src/minetest/games/asuna/mods/motorboat &&\
-git -C /usr/src/minetest/games/asuna/mods/motorboat checkout master
+     /usr/src/minetest/mods/motorboat &&\
+git -C /usr/src/minetest/mods/motorboat checkout master
 
 RUN git clone --depth=1 https://github.com/APercy/pa28 \
-     /usr/src/minetest/games/asuna/mods/pa28 &&\
-git -C /usr/src/minetest/games/asuna/mods/pa28 checkout main
+     /usr/src/minetest/mods/pa28 &&\
+git -C /usr/src/minetest/mods/pa28 checkout main
 
 RUN git clone --depth=1 https://github.com/APercy/helicopter \
-     /usr/src/minetest/games/asuna/mods/helicopter &&\
-git -C /usr/src/minetest/games/asuna/mods/helicopter checkout master
+     /usr/src/minetest/mods/helicopter &&\
+git -C /usr/src/minetest/mods/helicopter checkout master
 
 RUN git clone --depth=1 https://github.com/APercy/trike \
-     /usr/src/minetest/games/asuna/mods/trike &&\
-git -C /usr/src/minetest/games/asuna/mods/trike checkout master
+     /usr/src/minetest/mods/trike &&\
+git -C /usr/src/minetest/mods/trike checkout master
 
 RUN git clone --depth=1 https://github.com/APercy/minekart \
-     /usr/src/minetest/games/asuna/mods/minekart &&\
-git -C /usr/src/minetest/games/asuna/mods/minekart checkout master
+     /usr/src/minetest/mods/minekart &&\
+git -C /usr/src/minetest/mods/minekart checkout master
 
 RUN git clone --depth=1 https://github.com/APercy/ww1_planes \
-     /usr/src/minetest/games/asuna/mods/ww1_planes &&\
-git -C /usr/src/minetest/games/asuna/mods/ww1_planes checkout main
+     /usr/src/minetest/mods/ww1_planes &&\
+git -C /usr/src/minetest/mods/ww1_planes checkout main
 
 RUN git clone --depth=1 https://github.com/APercy/ju52 \
-     /usr/src/minetest/games/asuna/mods/ju52 &&\
-git -C /usr/src/minetest/games/asuna/mods/ju52 checkout main
+     /usr/src/minetest/mods/ju52 &&\
+git -C /usr/src/minetest/mods/ju52 checkout main
 
 RUN git clone --depth=1 https://github.com/APercy/demoiselle \
-     /usr/src/minetest/games/asuna/mods/demoiselle &&\
-git -C /usr/src/minetest/games/asuna/mods/demoiselle checkout main
+     /usr/src/minetest/mods/demoiselle &&\
+git -C /usr/src/minetest/mods/demoiselle checkout main
 
 RUN git clone --depth=1 https://github.com/APercy/fishing_boat \
-     /usr/src/minetest/games/asuna/mods/fishing_boat &&\
-git -C /usr/src/minetest/games/asuna/mods/fishing_boat checkout main
+     /usr/src/minetest/mods/fishing_boat &&\
+git -C /usr/src/minetest/mods/fishing_boat checkout main
 
 RUN git clone --depth=1 https://github.com/APercy/nautilus \
-     /usr/src/minetest/games/asuna/mods/nautilus &&\
-git -C /usr/src/minetest/games/asuna/mods/nautilus checkout master
+     /usr/src/minetest/mods/nautilus &&\
+git -C /usr/src/minetest/mods/nautilus checkout master
 
 RUN git clone --depth=1 https://github.com/APercy/ap_airship \
-     /usr/src/minetest/games/asuna/mods/ap_airship &&\
-git -C /usr/src/minetest/games/asuna/mods/ap_airship checkout main
+     /usr/src/minetest/mods/ap_airship &&\
+git -C /usr/src/minetest/mods/ap_airship checkout main
 
 RUN git clone --depth=1 https://github.com/APercy/savoia_s21 \
-     /usr/src/minetest/games/asuna/mods/savoia_s21 &&\
-git -C /usr/src/minetest/games/asuna/mods/savoia_s21 checkout main
+     /usr/src/minetest/mods/savoia_s21 &&\
+git -C /usr/src/minetest/mods/savoia_s21 checkout main
 
 RUN git clone --depth=1 https://github.com/APercy/b47_heli \
-     /usr/src/minetest/games/asuna/mods/b47_heli &&\
-git -C /usr/src/minetest/games/asuna/mods/b47_heli checkout main
+     /usr/src/minetest/mods/b47_heli &&\
+git -C /usr/src/minetest/mods/b47_heli checkout main
 
 RUN git clone --depth=1 https://github.com/APercy/ju52_hydro \
-     /usr/src/minetest/games/asuna/mods/ju52_hydro &&\
-git -C /usr/src/minetest/games/asuna/mods/ju52_hydro checkout main
+     /usr/src/minetest/mods/ju52_hydro &&\
+git -C /usr/src/minetest/mods/ju52_hydro checkout main
 
 RUN git clone \
         https://github.com/LuaJIT/LuaJIT \
