@@ -204,7 +204,6 @@ RUN git clone --depth=1 https://github.com/asuna-mt/x_farming \
 git -C /usr/src/minetest/games/asuna/mods/x_farming checkout asuna
 
 # Mods next
-
 RUN git clone --depth=1 https://codeberg.org/Wuzzy/xdecor-libre \
      /usr/src/minetest/games/asuna/mods/xdecor-libre &&\
 git -C /usr/src/minetest/games/asuna/mods/xdecor-libre checkout master
@@ -279,7 +278,7 @@ RUN git clone --depth=1 https://github.com/Lokrates/Biofuel \
 git -C /usr/src/minetest/games/asuna/mods/Biofuel checkout master
 
 RUN git clone --depth=1 https://github.com/APercy/automobiles_pck \
-     /usr/src/minetest/games/asuna/mods/automobiles_pckautomobiles_pck &&\
+     /usr/src/minetest/games/asuna/mods/automobiles_pck &&\
 git -C /usr/src/minetest/games/asuna/mods/automobiles_pck checkout main 
 
 RUN git clone --depth=1 https://github.com/APercy/steampunk_blimp \
