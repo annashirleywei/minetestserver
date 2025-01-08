@@ -209,10 +209,6 @@ RUN git clone --depth=1 https://codeberg.org/Wuzzy/xdecor-libre \
      /usr/src/minetest/games/asuna/mods/xdecor-libre &&\
 git -C /usr/src/minetest/games/asuna/mods/xdecor-libre checkout master
 
-RUN git clone --depth=1 https://codeberg.org/Wuzzy/xdecor-libre \
-     /usr/src/minetest/games/asuna/mods/xdecor-libre &&\
-git -C /usr/src/minetest/games/asuna/mods/xdecor-libre checkout master
-
 RUN git clone --depth=1 https://github.com/mt-mods/hangglider \
      /usr/src/minetest/games/asuna/mods/hangglider &&\
 git -C /usr/src/minetest/games/asuna/mods/hangglider checkout master
