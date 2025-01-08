@@ -295,7 +295,7 @@ git -C /usr/src/minetest/games/asuna/mods/hidroplane checkout main
 
 RUN git clone --depth=1 https://github.com/APercy/motorboat \
      /usr/src/minetest/games/asuna/mods/motorboat &&\
-git -C /usr/src/minetest/games/asuna/mods/motorboat checkout main
+git -C /usr/src/minetest/games/asuna/mods/motorboat checkout master
 
 RUN git clone --depth=1 https://github.com/APercy/pa28 \
      /usr/src/minetest/games/asuna/mods/pa28 &&\
